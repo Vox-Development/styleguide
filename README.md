@@ -10,7 +10,7 @@ Official web site: http://clojurescript.org
 
 ### Before contributing to this project:
 
-Install [Leiningen](http://leiningen.org/). To begin working on this project
+Install [Leiningen](http://leiningen.org/).
 
 **Note:** You can also install leiningen via homebrew with `brew install leiningen`
 
