@@ -1,19 +1,18 @@
 # Vox Syleguide
 
-A [re-frame](https://github.com/Day8/re-frame) application based on clojure
-
-
-### Clojure
-
-Install [Leiningen](http://leiningen.org/). To begin working on this project
-
-**Note:** You can also install leiningen via homebrew with `brew install leiningen`
+A [re-frame](https://github.com/Day8/re-frame) application based on clojurescript
 
 ## What is ClojureScript? ##
 
 [ClojureScript](http://clojurescript.org) is a compiler for [Clojure](http://clojure.org) that targets JavaScript. It is designed to emit JavaScript code which is compatible with the advanced compilation mode of the [Google Closure](https://developers.google.com/closure/compiler/) optimizing compiler.
 
 Official web site: http://clojurescript.org
+
+### Before contributing to this project:
+
+Install [Leiningen](http://leiningen.org/). To begin working on this project
+
+**Note:** You can also install leiningen via homebrew with `brew install leiningen`
 
 ## Development Mode
 
