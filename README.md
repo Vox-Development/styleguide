@@ -16,9 +16,9 @@ Install [Leiningen](http://leiningen.org/).
 
 Install [Node](https://nodejs.org/en/)
 
-**Note:** Node comes with NPM, use it to install dependencies  `npm install` on the project root, to get all the node modules required
+**Note:** Node comes with NPM, use it to install dependencies  `npm install` on the project root
 
-Run `gulp` to compile sass assets
+Run `gulp` on the terminal to compile assets
 
 ## Development Mode
 
