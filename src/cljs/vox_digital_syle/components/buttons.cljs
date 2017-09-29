@@ -4,22 +4,29 @@
 
 (def expanded (r/atom nil))
 
+(defn button [bclass]
+  [:a {:href "#" :class (str "btn " bclass)} "." bclass])
+
 (defn buttons []
   [:section {:id "buttons" :class "huge-module anchor clearfix"}
 	 [:h2 {:class "huge-module__title"} "Buttons"]
 	 [:ul {:class "huge-list--unstyled"}
 	  [:li.spaced
-	   [:a {:href "#" :class "huge-module__toggle-code" :on-click #(swap! expanded not)}]
-	   [:a {:href "#" :class "btn btn-sugn-up"} ".btn-sugn-up"]
-       [:a {:href "#" :class "btn btn-prev"} ".btn-prev"]
-       [:a {:href "#" :class "btn btn-next"} ".btn-next"]
-       [:a {:href "#" :class "btn btn-success round-btn"} ".btn-success .round-btn"]
-       [:br][:br]
-       [:p "Below are bootstrap defaults"]
-       [:a {:href "#" :class "btn btn-success"} ".btn-success"]
-       [:a {:href "#" :class "btn btn-warning"} ".btn-warning"]
-       [:a {:href "#" :class "btn btn-danger"} ".btn-danger"]
-       [:a {:href "#" :class "btn btn-default"} ".btn-default"]
+	   	[:a {:href "#" :class "huge-module__toggle-code" :on-click #(swap! expanded not)}]
+		[button "btn-sugn-up"]
+    	[button "btn-prev"]
+    	[button "btn-next"]
+    	[button "btn-success round-btn"]
+     
+       	[:br][:br]
+       
+       	[:p "Below are bootstrap defaults"]
+       
+       	[button "btn-success"]
+    	[button "btn-warning"]
+    	[button "btn-danger"]
+    	[button "btn-default"]
+     
     (if @expanded
       [:pre {:class "language-markup"}
 	    [:code {:class "language-markup" :data-language "markup"}

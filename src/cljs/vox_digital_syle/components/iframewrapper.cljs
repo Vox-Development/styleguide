@@ -16,22 +16,19 @@
             ))
 
 (defn wrapper []
-  (let [active-class (re-frame/subscribe [:name])]
-    (fn []
-      [:main.container
-       [:div {:class "huge-frame-content test"}
-    		[intro/introduction]
-      	[colors/colors]
-       	[typo/typography]
-        [buttons/buttons]
-        [lists/lists]
-        [forms/forms]
-        [tables/tables]
-        [alerts/alerts]
-        [panels/panels]
-        [cards/cards]
-        [images/images]
-        [grid/grid]
-        [icons/icons]]])
-    )
-)
+    [:main.container
+        [:div {:class "huge-frame-content"}
+            [intro/introduction]
+        	[colors/colors]
+        	[typo/typography]
+            [buttons/buttons]
+            [lists/lists]
+            [forms/forms]
+            [tables/tables]
+            [alerts/alerts]
+            [panels/panels]
+            [cards/cards]
+            [images/images]
+            [grid/grid]
+            [icons/icons]]])
+

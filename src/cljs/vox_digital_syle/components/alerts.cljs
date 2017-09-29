@@ -21,35 +21,35 @@
 
    (if @expanded
      [:pre {:class "language-markup"}
- [:code {:class "language-markup" :data-language "markup"}
-  [:span {:class "nt"} "&lt;div"]
-  [:span {:class "na"} "class="]
-  [:span {:class "s"} "&quot;alert alert-success&quot;"]
-  [:span {:class "na"} "role="]
-  [:span {:class "s"} "&quot;alert&quot;"]
-  [:span {:class "nt"} "&gt;"]"..." 
-  [:span {:class "nt"} "&lt;/div&gt;"]
-  [:span {:class "nt"} "&lt;div"]
-  [:span {:class "na"} "class="]
-  [:span {:class "s"} "&quot;alert alert-info&quot;"]
-  [:span {:class "na"} "role="]
-  [:span {:class "s"} "&quot;alert&quot;"]
-  [:span {:class "nt"} "&gt;"]"..." 
-  [:span {:class "nt"} "&lt;/div&gt;"]
-  [:span {:class "nt"} "&lt;div"]
-  [:span {:class "na"} "class="]
-  [:span {:class "s"} "&quot;alert alert-warning&quot;"]
-  [:span {:class "na"} "role="]
-  [:span {:class "s"} "&quot;alert&quot;"]
-  [:span {:class "nt"} "&gt;"]"..." 
-  [:span {:class "nt"} "&lt;/div&gt;"]
-  [:span {:class "nt"} "&lt;div"]
-  [:span {:class "na"} "class="]
-  [:span {:class "s"} "&quot;alert alert-danger&quot;"]
-  [:span {:class "na"} "role="]
-  [:span {:class "s"} "&quot;alert&quot;"]
-  [:span {:class "nt"} "&gt;"]"..." 
-  [:span {:class "nt"} "&lt;/div&gt;"]]])
+       [:code {:class "language-markup" :data-language "markup"}
+        [:span {:class "nt"} "&lt;div"]
+        [:span {:class "na"} "class="]
+        [:span {:class "s"} "&quot;alert alert-success&quot;"]
+        [:span {:class "na"} "role="]
+        [:span {:class "s"} "&quot;alert&quot;"]
+        [:span {:class "nt"} "&gt;"]"..." 
+        [:span {:class "nt"} "&lt;/div&gt;"]
+        [:span {:class "nt"} "&lt;div"]
+        [:span {:class "na"} "class="]
+        [:span {:class "s"} "&quot;alert alert-info&quot;"]
+        [:span {:class "na"} "role="]
+        [:span {:class "s"} "&quot;alert&quot;"]
+        [:span {:class "nt"} "&gt;"]"..." 
+        [:span {:class "nt"} "&lt;/div&gt;"]
+        [:span {:class "nt"} "&lt;div"]
+        [:span {:class "na"} "class="]
+        [:span {:class "s"} "&quot;alert alert-warning&quot;"]
+        [:span {:class "na"} "role="]
+        [:span {:class "s"} "&quot;alert&quot;"]
+        [:span {:class "nt"} "&gt;"]"..." 
+        [:span {:class "nt"} "&lt;/div&gt;"]
+        [:span {:class "nt"} "&lt;div"]
+        [:span {:class "na"} "class="]
+        [:span {:class "s"} "&quot;alert alert-danger&quot;"]
+        [:span {:class "na"} "role="]
+        [:span {:class "s"} "&quot;alert&quot;"]
+        [:span {:class "nt"} "&gt;"]"..." 
+        [:span {:class "nt"} "&lt;/div&gt;"]]])
    ]
   )
 
