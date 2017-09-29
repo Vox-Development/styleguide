@@ -18,7 +18,7 @@ Install [Node](https://nodejs.org/en/)
 
 **Note:** Node comes with NPM, use it to install dependencies  `npm install` on the project root
 
-Run `gulp` on the terminal to compile assets
+Run `gulp` to compile assets
 
 ## Development Mode
 
