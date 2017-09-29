@@ -1,6 +1,5 @@
 (ns vox-digital-syle.components.colors
-  (:require [re-frame.core :as re-frame]
-            [reagent.core :as r]))
+  (:require [reagent.core :as r]))
 
 (def color-main (r/atom [
                        "bg-green" "bg-gray-lightest"

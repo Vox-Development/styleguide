@@ -1,6 +1,5 @@
 (ns vox-digital-syle.components.cards
-  (:require [re-frame.core :as re-frame]
-            [reagent.core :as r]))
+  (:require [reagent.core :as r]))
 
 (def expanded (r/atom nil))
 (def base-url "https://www.vox.co.za")

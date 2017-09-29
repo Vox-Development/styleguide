@@ -1,5 +1,4 @@
-(ns vox-digital-syle.components.introduction
-  (:require [re-frame.core :as re-frame]))
+(ns vox-digital-syle.components.introduction)
 
 (defn introduction []
   [:section {:id "introduction", :class "huge-module anchor clearfix"}

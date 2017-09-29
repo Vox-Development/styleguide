@@ -1,6 +1,5 @@
 (ns vox-digital-syle.components.lists
-  (:require [re-frame.core :as re-frame]
-            [reagent.core :as r]))
+  (:require [reagent.core :as r]))
 
 (def expanded-ul (r/atom nil))
 (def expanded-ol (r/atom nil))

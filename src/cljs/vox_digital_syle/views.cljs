@@ -6,7 +6,6 @@
             [vox-digital-syle.layout.footer :as footer]
   ))
 
-
 ;; home
 (defn home-panel []
   [:div

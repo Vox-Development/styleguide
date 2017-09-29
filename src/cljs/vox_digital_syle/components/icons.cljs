@@ -1,6 +1,4 @@
-(ns vox-digital-syle.components.icons
-  (:require [re-frame.core :as re-frame]
-            [reagent.core :as r]))
+(ns vox-digital-syle.components.icons)
 
 (defn icons []
   ;;A list of bootstrap icons

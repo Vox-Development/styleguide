@@ -1,5 +1,4 @@
-(ns vox-digital-syle.layout.footer
-  (:require [re-frame.core :as re-frame]))
+(ns vox-digital-syle.layout.footer)
 
 (defn footer []
   [:div.text-center

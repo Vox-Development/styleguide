@@ -1,5 +1,4 @@
-(ns vox-digital-syle.components.typography
-  (:require [re-frame.core :as re-frame]))
+(ns vox-digital-syle.components.typography)
 
 (defn typography []
   [:section {:id "typography" :class "huge-module anchor clearfix"}
