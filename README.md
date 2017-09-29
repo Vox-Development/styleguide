@@ -8,11 +8,17 @@ A [re-frame](https://github.com/Day8/re-frame) application based on clojurescrip
 
 Official web site: http://clojurescript.org
 
-### Before contributing to this project:
+## Requirements: ##
 
 Install [Leiningen](http://leiningen.org/).
 
 **Note:** You can also install leiningen via homebrew with `brew install leiningen`
+
+Install [Node](https://nodejs.org/en/)
+
+**Note:** Node comes with NPM, use it to install dependencies  `npm install` on the project root, to get all the node modules required
+
+Run `gulp` to compile sass assets
 
 ## Development Mode
 
