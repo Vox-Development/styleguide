@@ -1,4 +1,4 @@
-# Vox Syleguide
+# Vox Styleguide
 
 A [re-frame](https://github.com/Day8/re-frame) application based on clojurescript
 
