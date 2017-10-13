@@ -15,7 +15,7 @@ gulp.task('styles', () => {
     }).on('error', $.sass.logError))
     .pipe($.cssnano({safe: true, autoprefixer: false}))
     .pipe($.autoprefixer())
-    .pipe(gulp.dest('resources/public/css'));
+    .pipe(gulp.dest('resources/public/styles'));
 });
 
 gulp.task('clean', del.bind(null, ['resources/public/css']));
