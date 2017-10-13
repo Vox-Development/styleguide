@@ -12,20 +12,19 @@
 	 [:ul {:class "huge-list--unstyled"}
 	  [:li.spaced
 	   	[:a {:href "#" :class "huge-module__toggle-code" :on-click #(swap! expanded not)}]
-		[button "btn-sugn-up"]
+
+      [button "btn-sugn-up"]
     	[button "btn-prev"]
     	[button "btn-next"]
     	[button "btn-success round-btn"]
-     
-       	[:br][:br]
-       
-       	[:p "Below are bootstrap defaults"]
-       
-       	[button "btn-success"]
+
+      [:p "Below are bootstrap defaults"]
+
+      [button "btn-success"]
     	[button "btn-warning"]
     	[button "btn-danger"]
     	[button "btn-default"]
-     
+
     (if @expanded
       [:pre {:class "language-markup"}
 	    [:code {:class "language-markup" :data-language "markup"}

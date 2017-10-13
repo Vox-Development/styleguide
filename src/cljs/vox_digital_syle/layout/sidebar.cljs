@@ -1,9 +1,9 @@
 (ns vox-digital-syle.layout.sidebar
-  (:require [re-frame.core :as re-frame]))
+  (:require [re-frame.core :as re-frame :refer [subscribe dispatch]]))
 
 (defn sidebar []
-  (let [logo-url (re-frame/subscribe [:logo-url])
-        active-section (re-frame/subscribe [:active-section])
+  (let [logo-url (subscribe [:logo-url])
+        active-section (subscribe [:active-section])
         sections [
                   "introduction" "colors"
                   "typography" "buttons"
@@ -24,6 +24,6 @@
              [:li.huge-sidebar__nav__item
               [:a {:href (str \# label)
                    :class (str "huge-sidebar__nav__item__link huge-anchor " (when (= @active-section label) "active"))
-                   :on-click #(re-frame/dispatch [:set-active-section label])}
+                   :on-click #(dispatch [:set-active-section label])}
                label]]))
           ]]]])))
