@@ -1,5 +1,7 @@
 (ns vox-digital-syle.components.panels
-  (:require [reagent.core :as r]))
+  (:require [reagent.core :as r]
+            [vox-digital-syle.layout.markup :as markup]))
+
 (def expanded (r/atom nil))
 
 (defn panels []
@@ -16,42 +18,5 @@
      [:div {:class "panel-body"} " Panel content "]" "]" "]
    
    (if @expanded
-     [:pre {:class "language-markup"}
-       [:code {:class "language-markup", :data-language "markup"}
-        [:span {:class "nt"} "&lt;div"]
-        [:span {:class "na"} "class="]
-        [:span {:class "s"} "&quot;panel panel-default&quot;"]
-        [:span {:class "nt"} "&gt;"]
-        [:span {:class "nt"} "&lt;div"]
-        [:span {:class "na"} "class="]
-        [:span {:class "s"} "&quot;panel-heading&quot;"]
-        [:span {:class "nt"} "&gt;"]"Panel heading without title" 
-        [:span {:class "nt"} "&lt;/div&gt;"]
-        [:span {:class "nt"} "&lt;div"]
-        [:span {:class "na"} "class="]
-        [:span {:class "s"} "&quot;panel-body&quot;"]
-        [:span {:class "nt"} "&gt;"]"Panel content" 
-        [:span {:class "nt"} "&lt;/div&gt;"]
-        [:span {:class "nt"} "&lt;/div&gt;"]
-        [:span {:class "nt"} "&lt;div"]
-        [:span {:class "na"} "class="]
-        [:span {:class "s"} "&quot;panel panel-default&quot;"]
-        [:span {:class "nt"} "&gt;"]
-        [:span {:class "nt"} "&lt;div"]
-        [:span {:class "na"} "class="]
-        [:span {:class "s"} "&quot;panel-heading&quot;"]
-        [:span {:class "nt"} "&gt;"]
-        [:span {:class "nt"} "&lt;h3"]
-        [:span {:class "na"} "class="]
-        [:span {:class "s"} "&quot;panel-title&quot;"]
-        [:span {:class "nt"} "&gt;"]"Panel title" 
-        [:span {:class "nt"} "&lt;/h3&gt;"]
-        [:span {:class "nt"} "&lt;/div&gt;"]
-        [:span {:class "nt"} "&lt;div"]
-        [:span {:class "na"} "class="]
-        [:span {:class "s"} "&quot;panel-body&quot;"]
-        [:span {:class "nt"} "&gt;"]"Panel content" 
-        [:span {:class "nt"} "&lt;/div&gt;"]
-        [:span {:class "nt"} "&lt;/div&gt;"]]]
-   )
-   ])
+     [markup/panel-markup]
+   )])

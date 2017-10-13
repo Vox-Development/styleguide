@@ -1,5 +1,6 @@
 (ns vox-digital-syle.components.alerts
-  (:require [reagent.core :as r]))
+  (:require [reagent.core :as r]
+            [vox-digital-syle.layout.markup :as markup]))
 
 (def expanded (r/atom nil))
 
@@ -19,36 +20,7 @@
      [:strong "Oh snap!"]" Change a few things up and try submitting again. "]" "]
 
    (if @expanded
-     [:pre {:class "language-markup"}
-       [:code {:class "language-markup" :data-language "markup"}
-        [:span {:class "nt"} "&lt;div"]
-        [:span {:class "na"} "class="]
-        [:span {:class "s"} "&quot;alert alert-success&quot;"]
-        [:span {:class "na"} "role="]
-        [:span {:class "s"} "&quot;alert&quot;"]
-        [:span {:class "nt"} "&gt;"]"..." 
-        [:span {:class "nt"} "&lt;/div&gt;"]
-        [:span {:class "nt"} "&lt;div"]
-        [:span {:class "na"} "class="]
-        [:span {:class "s"} "&quot;alert alert-info&quot;"]
-        [:span {:class "na"} "role="]
-        [:span {:class "s"} "&quot;alert&quot;"]
-        [:span {:class "nt"} "&gt;"]"..." 
-        [:span {:class "nt"} "&lt;/div&gt;"]
-        [:span {:class "nt"} "&lt;div"]
-        [:span {:class "na"} "class="]
-        [:span {:class "s"} "&quot;alert alert-warning&quot;"]
-        [:span {:class "na"} "role="]
-        [:span {:class "s"} "&quot;alert&quot;"]
-        [:span {:class "nt"} "&gt;"]"..." 
-        [:span {:class "nt"} "&lt;/div&gt;"]
-        [:span {:class "nt"} "&lt;div"]
-        [:span {:class "na"} "class="]
-        [:span {:class "s"} "&quot;alert alert-danger&quot;"]
-        [:span {:class "na"} "role="]
-        [:span {:class "s"} "&quot;alert&quot;"]
-        [:span {:class "nt"} "&gt;"]"..." 
-        [:span {:class "nt"} "&lt;/div&gt;"]]])
+     [markup/alerts-markup ])
    ]
   )
 

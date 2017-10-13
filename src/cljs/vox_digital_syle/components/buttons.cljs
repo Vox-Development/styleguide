@@ -1,5 +1,6 @@
 (ns vox-digital-syle.components.buttons
-  (:require [reagent.core :as r]))
+  (:require [reagent.core :as r]
+            [vox-digital-syle.layout.markup :as markup]))
 
 (def expanded (r/atom nil))
 
@@ -19,6 +20,7 @@
     	[button "btn-success round-btn"]
 
       [:p "Below are bootstrap defaults"]
+      [:br]
 
       [button "btn-success"]
     	[button "btn-warning"]
@@ -26,28 +28,7 @@
     	[button "btn-default"]
 
     (if @expanded
-      [:pre {:class "language-markup"}
-	    [:code {:class "language-markup" :data-language "markup"}
-      	 [:span {:class "token comment"} "// add class name of the button of your choice"][:br]
-         [:span {:class "token comment"} "// add class .round-btn to add radius"][:br]
-	     [:span {:class "token tag"}
-	      [:span {:class "token tag"}
-	       [:span {:class "token punctuation"} "<"] "a"]
-	      [:span {:class "token attr-name"} " href"]
-	      [:span {:class "token attr-value"}
-	       [:span {:class "token punctuation"} "="]
-	       [:span {:class "token punctuation"} "'"]"#"
-	       [:span {:class "token punctuation"} "'"]]
-	      [:span {:class "token attr-name"} " class"]
-	      [:span {:class "token attr-value"}
-	       [:span {:class "token punctuation"} "="]
-	       [:span {:class "token punctuation"} "'"]"btn btn-primary"
-	       [:span {:class "token punctuation"} "'"]]
-	      [:span {:class "token punctuation"} ">"]]"Buy Now"
-	     [:span {:class "token tag"}
-	      [:span {:class "token tag"}
-	       [:span {:class "token punctuation"} "</"]"a"]
-	      [:span {:class "token punctuation"} ">"]]]])
+      [markup/button-markup ])
     ]
    ]]
   )
