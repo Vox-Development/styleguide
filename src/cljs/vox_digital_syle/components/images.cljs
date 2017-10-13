@@ -23,37 +23,14 @@
     [img-holder "img-thumbnail"]
     [img-holder "img-square"]
 
-   (if @expanded
-    [:pre
-     [:code {:class "language-html", :data-lang "html"}
-      [:span {:class "nt"} "&lt;img"]
-      [:span {:class "na"} "src="]
-      [:span {:class "s"} "&quot;...&quot;"]
-      [:span {:class "na"} "alt="]
-      [:span {:class "s"} "&quot;...&quot;"]
-      [:span {:class "na"} "class="]
-      [:span {:class "s"} "&quot;img-rounded&quot;"]
-      [:span {:class "nt"} "&gt;"]
-      [:span {:class "nt"} "&lt;img"]
-      [:span {:class "na"} "src="]
-      [:span {:class "s"} "&quot;...&quot;"]
-      [:span {:class "na"} "alt="]
-      [:span {:class "s"} "&quot;...&quot;"]
-      [:span {:class "na"} "class="]
-      [:span {:class "s"} "&quot;img-circle&quot;"]
-      [:span {:class "nt"} "&gt;"]
-      [:span {:class "nt"} "&lt;img"]
-      [:span {:class "na"} "src="]
-      [:span {:class "s"} "&quot;...&quot;"]
-      [:span {:class "na"} "alt="]
-      [:span {:class "s"} "&quot;...&quot;"]
-      [:span {:class "na"} "class="]
-      [:span {:class "s"} "&quot;img-thumbnail&quot;"]
-      [:span {:class "nt"} "&gt;"]]])
-
     [:h2 "Vox Bubbles"]
 
     [:img {:src "images/green.png" :alt "green bubble" :class "bubble col-md-3"}]
     [:img {:src "images/orange.png" :alt "green bubble" :class "bubble col-md-3"}]
-    [:img {:src "images/blue.png" :alt "green bubble" :class "bubble col-md-3"}]])
+    [:img {:src "images/blue.png" :alt "green bubble" :class "bubble col-md-3"}]
+    
+    [:br]
+    
+    (if @expanded 
+        [:h1 "Pre code here"])])
 
